@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   users: any;
+  title = '';
+  constructor(private http: HttpClient) {}
+  ngOnInit() {
+    this.getUsers();
+  }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  getUsers() {
+    this.http.get('https://localhost:7263/api/users').subscribe({
+      next: (response) => this.users = response,
+      error: (e) => console.error(e)
+    })
   }
 }

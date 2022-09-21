@@ -20,7 +20,7 @@ import { AccountService } from './_services/account.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [AccountService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

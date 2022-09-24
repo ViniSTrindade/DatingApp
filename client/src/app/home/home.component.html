@@ -3,14 +3,14 @@
         <h1>Find your match</h1>
         <p class="lead">Come on in to view your matches... all you need to do is sign up!</p>
         <div class="text-center">
-            <button class="me-2 btn btn-primary btn-lg mr-2" (click)='registerToggle()'>Register</button>
+            <button class="me-2 btn btn-primary btn-lg mr-2" (click)='registerToggle()' type="button">Register</button>
             <button class="me-2 btn btn-info btn-lg">Learn more</button>
         </div>
     </div>
     <div class="container" *ngIf="registerMode">
         <div class="ms-5 row justify-content-center">
             <div class="col-3">
-                <p>Register Form goes here</p>
+              <app-register></app-register>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     NavComponent,
     HomeComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

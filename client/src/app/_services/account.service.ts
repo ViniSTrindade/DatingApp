@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
-import { map, sequenceEqual } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { User } from '../_models/user';
-
 
 @Injectable({
   providedIn: 'root'
@@ -30,9 +29,8 @@ export class AccountService {
     this.currentUserSource.next(user);
   }
 
-
   logout() {
     localStorage.removeItem('user');
-    this.currentUserSource.next(null!);
+    this.currentUserSource.next(null);
   }
 }

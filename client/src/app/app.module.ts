@@ -13,6 +13,7 @@ import { NavComponent } from './nav/nav.component';
 import { NgModule } from '@angular/core';
 import { RegisterComponent } from './register/register.component';
 import { SharedModule } from './_modules/shared.module';
+import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SharedModule } from './_modules/shared.module';
     MemberListComponent,
     MessagesComponent,
     NavComponent,
-    RegisterComponent
+    RegisterComponent,
+    TestErrorsComponent
   ],
   imports: [
     AppRoutingModule,

@@ -1,6 +1,4 @@
 
-using API.Controllers;
-
 namespace API.Errors
 {
     public class ApiException
